@@ -1,0 +1,50 @@
+
+@mixin media-maxwidth($screensize){
+    @media (max-width:$screensize) {
+       @content;
+     }
+ }
+
+
+
+@mixin PaddingPhotoProfil() {
+        padding-bottom: 10%;
+        padding-top: 3%;
+        align-items: center;
+        margin-left: 5%;
+ }
+
+ @mixin MainBlocs_1_2(){
+
+        h2 {
+            color: $NeutreColorUn;
+            font-family: Fraunces 9pt Soft;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: -0.286px;
+            margin-top: 20%;
+        }
+        p {
+            color: $NeutreColorDeux;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            letter-spacing: -0.129px;
+        }
+        a {
+            color: $NeutreColorUn;
+            font-family: Fraunces 9pt Soft;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 50%;          
+        }
+ }
+ 

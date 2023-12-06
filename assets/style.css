@@ -16,10 +16,12 @@ header {
 @media (max-width: 375px) {
   header {
     height: auto;
+    padding-left: 1%;
+    padding-top: 1%;
   }
 }
 header h1 {
-  color: #FFF;
+  color: hsl(0, 0%, 100%);
   text-align: center;
   font-family: Fraunces 9pt Soft;
   font-size: 56px;
@@ -28,18 +30,19 @@ header h1 {
   line-height: normal;
   letter-spacing: 8.75px;
   text-transform: uppercase;
-  margin-top: 195px;
+  margin-top: 5%;
 }
 @media (max-width: 375px) {
   header h1 {
     padding-bottom: 160%;
     margin-top: 20%;
-    width: 327px;
+    font-size: 40px;
   }
 }
 header .FlexHeader {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 header .FlexHeader .ImageLogoHeader {
   width: 170px;
@@ -52,7 +55,7 @@ header .FlexHeader .BlocHeaderLiens {
   width: 50%;
   justify-content: space-evenly;
   align-items: center;
-  color: #FFF;
+  color: hsl(0, 0%, 100%);
   font-family: Barlow;
   font-size: 18px;
   font-style: normal;
@@ -69,18 +72,23 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   letter-spacing: -0.107px;
   text-transform: uppercase;
   border-radius: 28px;
-  background: #FFF;
+  background: hsl(0, 0%, 100%);
   padding: 15px 20px;
-  flex-shrink: 0;
   text-decoration: none;
+  margin-top: 2%;
 }
-
 /*fin header*/
 /*début main*/
 .GridMain {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 600px 600px 600px;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .GridMain {
+    grid-template-rows: 600px 600px 900px 520px;
+  }
 }
 .GridMain .BlocTexte1 {
   background-image: url(images/image-transform.jpg);
@@ -88,6 +96,13 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   background-size: 50% auto;
   background-position: right;
   grid-column: 1/3;
+}
+@media (max-width: 375px) {
+  .GridMain .BlocTexte1 {
+    background-position: top center;
+    background-size: 100% auto;
+    margin-top: -8%;
+  }
 }
 .GridMain .BlocTexte1 .SousBlocTexte1 {
   text-align: left;
@@ -97,7 +112,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   padding-top: 5%;
 }
 .GridMain .BlocTexte1 .SousBlocTexte1 h2 {
-  color: #24303E;
+  color: hsl(212, 27%, 19%);
   font-family: Fraunces 9pt Soft;
   font-size: 40px;
   font-style: normal;
@@ -107,7 +122,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   margin-top: 20%;
 }
 .GridMain .BlocTexte1 .SousBlocTexte1 p {
-  color: #808397;
+  color: hsl(213, 9%, 39%);
   font-family: Barlow;
   font-size: 18px;
   font-style: normal;
@@ -116,7 +131,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   letter-spacing: -0.129px;
 }
 .GridMain .BlocTexte1 .SousBlocTexte1 a {
-  color: #24303E;
+  color: hsl(212, 27%, 19%);
   font-family: Fraunces 9pt Soft;
   font-size: 15px;
   font-style: normal;
@@ -126,12 +141,40 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   text-transform: uppercase;
   width: 50%;
 }
+@media (max-width: 375px) {
+  .GridMain .BlocTexte1 .SousBlocTexte1 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+    padding-top: 0%;
+    margin-top: 100%;
+  }
+}
+.GridMain .BlocTexte1 .SousBlocTexte1 a {
+  color: hsl(212, 27%, 19%);
+  font-family: Fraunces 9pt Soft;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration-color: hsl(51, 100%, 49%);
+  text-decoration-thickness: 5px;
+}
 .GridMain .BlocTexte2 {
   background-image: url(images/image-stand-out.jpg);
   background-repeat: no-repeat;
   background-size: 50% auto;
   background-position: left;
   grid-column: 1/3;
+}
+@media (max-width: 375px) {
+  .GridMain .BlocTexte2 {
+    background-position: top center;
+    background-size: 100% auto;
+    margin-top: 40%;
+  }
 }
 .GridMain .BlocTexte2 .SousBlocTexte2 {
   text-align: left;
@@ -141,7 +184,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   padding-top: 4%;
 }
 .GridMain .BlocTexte2 .SousBlocTexte2 h2 {
-  color: #24303E;
+  color: hsl(212, 27%, 19%);
   font-family: Fraunces 9pt Soft;
   font-size: 40px;
   font-style: normal;
@@ -151,7 +194,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   margin-top: 20%;
 }
 .GridMain .BlocTexte2 .SousBlocTexte2 p {
-  color: #808397;
+  color: hsl(213, 9%, 39%);
   font-family: Barlow;
   font-size: 18px;
   font-style: normal;
@@ -160,7 +203,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   letter-spacing: -0.129px;
 }
 .GridMain .BlocTexte2 .SousBlocTexte2 a {
-  color: #24303E;
+  color: hsl(212, 27%, 19%);
   font-family: Fraunces 9pt Soft;
   font-size: 15px;
   font-style: normal;
@@ -170,6 +213,27 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   text-transform: uppercase;
   width: 50%;
 }
+@media (max-width: 375px) {
+  .GridMain .BlocTexte2 .SousBlocTexte2 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+    padding-top: 0%;
+    margin-top: 120%;
+  }
+}
+.GridMain .BlocTexte2 .SousBlocTexte2 a {
+  color: hsl(212, 27%, 19%);
+  font-family: Fraunces 9pt Soft;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration-color: hsl(7, 99%, 70%);
+  text-decoration-thickness: 5px;
+}
 .GridMain .BlocTexte3 {
   background-image: url(images/image-graphic-design.jpg);
   background-repeat: no-repeat;
@@ -178,15 +242,34 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   grid-column: 1/2;
   grid-row: 3/4;
 }
-.GridMain .BlocTexte3 .SousBlocTexte3 {
+@media (max-width: 375px) {
+  .GridMain .BlocTexte3 {
+    background-position: bottom;
+    background-size: 170% auto;
+    margin-top: 70%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+.GridMain .SousBlocTexte3 {
   text-align: left;
   width: 40%;
   height: 95%;
   padding-left: 29%;
   padding-top: 37%;
 }
-.GridMain .BlocTexte3 .SousBlocTexte3 h2 {
-  color: #24554A;
+@media (max-width: 375px) {
+  .GridMain .SousBlocTexte3 {
+    text-align: bottom center;
+    width: 100%;
+    height: auto;
+    margin-top: 120%;
+    padding-left: 0%;
+    padding-top: 0%;
+  }
+}
+.GridMain .SousBlocTexte3 h2 {
+  color: hsl(167, 40%, 24%);
   text-align: center;
   font-family: Fraunces 9pt Soft;
   font-size: 28px;
@@ -195,8 +278,8 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   line-height: normal;
   letter-spacing: -0.2px;
 }
-.GridMain .BlocTexte3 .SousBlocTexte3 p {
-  color: #3E7467;
+.GridMain .SousBlocTexte3 p {
+  color: hsl(168, 34%, 41%);
   text-align: center;
   font-family: Barlow;
   font-size: 16px;
@@ -205,7 +288,8 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   line-height: 27px;
   letter-spacing: -0.114px;
 }
-.GridMain .BlocTexte4 {
+
+.BlocTexte4 {
   background-image: url(images/image-photography.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -213,15 +297,33 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   grid-column: 2/3;
   grid-row: 3/4;
 }
-.GridMain .BlocTexte4 .SousBlocTexte4 {
+@media (max-width: 375px) {
+  .BlocTexte4 {
+    background-position: top;
+    background-size: 170% auto;
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
+.BlocTexte4 .SousBlocTexte4 {
   text-align: left;
   width: 35%;
   height: 95%;
   padding-left: 33%;
   padding-top: 37%;
 }
-.GridMain .BlocTexte4 .SousBlocTexte4 h2 {
-  color: #052C3B;
+@media (max-width: 375px) {
+  .BlocTexte4 .SousBlocTexte4 {
+    text-align: bottom center;
+    width: 100%;
+    height: auto;
+    margin-top: 90%;
+    padding-left: 0%;
+    padding-top: 0%;
+  }
+}
+.BlocTexte4 .SousBlocTexte4 h2 {
+  color: hsl(212, 27%, 19%);
   text-align: center;
   font-family: Fraunces 9pt Soft;
   font-size: 28px;
@@ -230,7 +332,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   line-height: normal;
   letter-spacing: -0.2px;
 }
-.GridMain .BlocTexte4 .SousBlocTexte4 p {
+.BlocTexte4 .SousBlocTexte4 p {
   color: #19536C;
   text-align: center;
   font-family: Barlow;
@@ -248,20 +350,34 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
 }
 .FlexMain h2 {
   margin-top: 7%;
+  color: hsl(210, 4%, 67%);
+  text-align: center;
+  font-family: Fraunces 9pt Soft;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 4px;
 }
 .FlexMain .SousFlexMain {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
+@media (max-width: 375px) {
+  .FlexMain .SousFlexMain {
+    flex-direction: column;
+  }
+}
 .FlexMain .SousFlexMain .ProfilConfig {
   padding-bottom: 10%;
-  padding-left: 13%;
-  padding-right: 5%;
   padding-top: 3%;
+  align-items: center;
+  margin-left: 5%;
 }
 .FlexMain .SousFlexMain .ProfilConfig .ImageProfil {
   border-radius: 72px;
+  align-items: center;
 }
 
 /*fin main*/
@@ -275,13 +391,18 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
 }
 
 .FlexLienFooter {
-  background: #90D4C6;
+  background: hsl(168, 34%, 41%);
   display: Flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   justify-content: center;
+}
+@media (max-width: 375px) {
+  .FlexLienFooter {
+    display: inline-flex;
+  }
 }
 .FlexLienFooter .ImageLogoFooter {
   width: 170px;
@@ -293,7 +414,7 @@ header .FlexHeader .BlocHeaderLiens a:nth-child(4) {
   width: 50%;
   justify-content: space-evenly;
   align-items: center;
-  color: #458D7E;
+  color: hsl(168, 34%, 41%);
   font-family: Barlow;
   font-size: 18px;
   font-style: normal;
