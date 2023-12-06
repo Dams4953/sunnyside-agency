@@ -1,40 +1,13 @@
-@mixin MixinH2Transform1 {
 
-        h2 {
-            color: #24303E;
-            font-family: Fraunces 9pt Soft;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: normal;
-            letter-spacing: -0.286px;
-            margin-top: 20%;
-        }
-}
+@mixin media-maxwidth($screensize){
+    @media (max-width:$screensize) {
+       @content;
+     }
+ }
 
-@mixin MixinPTransform1 {
-        p {
-            color: #808397;
-            font-family: Barlow;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 30px;
-            letter-spacing: -0.129px;
-        }
-}
-
-@mixin MixinATransform1 {
-        a {
-            color: #24303E;
-            font-family: Fraunces 9pt Soft;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 25px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            width: 50%;
-            
-        }
-}
+@mixin PaddingPhotoProfil() {
+        padding-bottom: 10%;
+        padding-left: 13%;
+        padding-right: 5%;
+        padding-top: 3%;
+ }

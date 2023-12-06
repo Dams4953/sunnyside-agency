@@ -1,4 +1,3 @@
-
 $BorderBottomPrimaire: hsl(7, 99%, 70%);
 $BorderBottomSecondary: hsl(51, 100%, 49%);
 $TextConceptionGraphique: hsl(167, 40%, 24%);
@@ -10,3 +9,9 @@ $NeutreColorDeux: hsl(213, 9%, 39%);
 $NeutreColorTrois: hsl(232, 10%, 55%);
 $NeutreColorQuatre: hsl(210, 4%, 67%);
 $NeutreColorCinq: hsl(0, 0%, 100%);
+
+$screensize: "375px";
+
+
+
+@import 'mixin';

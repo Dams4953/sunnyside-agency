@@ -1,14 +1,13 @@
-@media screen and (max-width: 375px) {
-    @import 'mobile';
-}
+
 
 @import 'variables';
 @import 'mixin';
 
 body {
     margin: auto;
+    width: 100%;
 }
-
+ 
 /*début header*/
 header {
     background-image: url(images/image-header.jpg);
@@ -17,6 +16,12 @@ header {
     background-position: bottom center;
     width: auto;
     height: 100vh;
+
+    @include media-maxwidth($screensize) {
+        height: auto;
+       
+    }
+    
 
     h1 {
         color: #FFF;
@@ -29,13 +34,19 @@ header {
         letter-spacing: 8.75px;
         text-transform: uppercase;
         margin-top: 195px;
+        
+        @include media-maxwidth($screensize) {
+            padding-bottom: 160%;
+            margin-top: 20%;
+            width: 327px; 
+        }
     }
 
     .FlexHeader {
         display: flex;
         justify-content: space-between;
 
-        .ImageLogo {
+        .ImageLogoHeader {
             width: 170px;
             height: 33px; 
             margin-top: 12px;
@@ -81,7 +92,7 @@ header {
 .GridMain {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px 600px 600px 600px;
+    grid-template-rows: 600px 600px 600px;
 
     .BlocTexte1 {
         background-image: url(images/image-transform.jpg);
@@ -133,11 +144,8 @@ header {
                     
                 }
             }
-
         }
-
  
-    
     .BlocTexte2 {
         background-image: url(images/image-stand-out.jpg);
         background-repeat: no-repeat;
@@ -185,11 +193,171 @@ header {
                 text-transform: uppercase;
                 width: 50%;
                 
+            }    
+        }
+    }
+
+    .BlocTexte3 {
+        background-image: url(images/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: left;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        .SousBlocTexte3 {
+            text-align: left;
+            width: 40%;
+            height: 95%;
+            padding-left: 29%;
+            padding-top: 37%;
+            
+
+            h2 {
+                color: #24554A;
+                text-align: center;
+                font-family: Fraunces 9pt Soft;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: -0.2px;
             }
 
+            p {
+                color: #3E7467;
+                text-align: center;
+                font-family: Barlow;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 27px;
+                letter-spacing: -0.114px;
             
-        }
+            }
 
+        }
+    }
+
+    .BlocTexte4 {
+        background-image: url(images/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: right;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+
+        .SousBlocTexte4 {
+            text-align: left;
+            width: 35%;
+            height: 95%;
+            padding-left: 33%;
+            padding-top: 37%;
+
+            h2 {
+                color: #052C3B;
+                text-align: center;
+                font-family: Fraunces 9pt Soft;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: -0.2px;
+            }
+
+            p {
+                color: #19536C;
+                text-align: center;
+                font-family: Barlow;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 27px;
+                letter-spacing: -0.114px;          
+            }
+        }
+    }
+}       
+.FlexMain {
+    display: Flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        margin-top: 7%;
+    }
+
+    & .SousFlexMain {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+        & .ProfilConfig{
+
+            @include PaddingPhotoProfil;
+
+            & .ImageProfil {
+                    border-radius: 72px;
+            }
+
+        }
     }
 }
+/*fin main*/
+
+    
+/*début footer*/
+.FlexFooterImages {
+        display: flex;
+        flex-direction: row;
+        
+
+        & .ImageFooter {
+                width: 25%;
+        }     
+}
+
+
+
+.FlexLienFooter {
+        background: #90D4C6;
+        display: Flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 40vh;
+        justify-content: center;
+    
+        .ImageLogoFooter {
+            width: 170px;
+            height: 33px;
+            padding-bottom: 3%;
+        }
+
+        .SousFlexLienFooter {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #458D7E;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: -0.129px;
+        }
+        
+        .ContactLiens {
+            text-align: center;
+            padding: 2%;
+            width: 164px;
+            height: 20px; 
+        }       
+}
+
+
+
+      
+
        
