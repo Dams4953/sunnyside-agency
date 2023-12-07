@@ -5,13 +5,48 @@
      }
  }
 
+ @mixin ParagrapheProfril () {
+        color: #5B636D;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -0.129px;
+ }
 
+ @mixin PosteProfilConfig() {
+        color: #A7AAAD;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: -0.1px;
+        padding-right: 20;
+
+}
+@mixin NomProfilConfig() {
+        color: #24303E;
+        text-align: center;
+        font-family: Fraunces 9pt Soft;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.129px;
+}
 
 @mixin PaddingPhotoProfil() {
-        padding-bottom: 10%;
-        padding-top: 3%;
-        align-items: center;
-        margin-left: 5%;
+            padding-bottom: 10%;
+            padding-top: 3%;
+            align-items: center;
+            margin-left: 5%;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
  }
 
  @mixin MainBlocs_1_2(){
@@ -24,7 +59,7 @@
             font-weight: 900;
             line-height: normal;
             letter-spacing: -0.286px;
-            margin-top: 20%;
+            
         }
         p {
             color: $NeutreColorDeux;
